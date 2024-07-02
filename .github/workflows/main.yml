@@ -26,6 +26,10 @@ jobs:
       run: |
         python rating_sorter.py
 
+    - name: Display rating.txt contents
+      run: |
+        cat rating.txt
+
     - name: Commit and push results if there are changes
       run: |
         git config --global user.name 'github-actions'
@@ -36,6 +40,5 @@ jobs:
           git push
         else
           echo "No changes to commit"
-        fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
