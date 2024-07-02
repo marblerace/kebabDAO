@@ -8,6 +8,9 @@ rating_file = 'rating.txt'
 with open(data_file, 'r') as file:
     content = file.read()
 
+print("Original content of data.txt:")
+print(content)
+
 # Split the content into entries based on the pattern
 entries = content.split('Restaurant Name:')
 
@@ -39,6 +42,9 @@ for entry in entries:
 
         # Append to the list
         restaurants.append((name, average_rating))
+
+        # Debug print for each restaurant
+        print(f"Parsed restaurant: {name}, Rating S: {ratingS}, Rating J: {ratingJ}, Average Rating: {average_rating}")
 
 # Sort the restaurants by average rating in descending order
 restaurants.sort(key=lambda x: x[1], reverse=True)
