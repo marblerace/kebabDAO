@@ -1,7 +1,8 @@
 import re
 
-# Define the file path
+# Define the file paths
 data_file = 'data.txt'
+rating_file = 'rating.txt'
 
 # Read the file contents
 with open(data_file, 'r') as file:
@@ -42,7 +43,7 @@ for entry in entries:
 # Sort the restaurants by average rating in descending order
 restaurants.sort(key=lambda x: x[1], reverse=True)
 
-# Write the results to the data.txt file
-with open(data_file, 'w') as file:
+# Write the results to the rating.txt file
+with open(rating_file, 'w') as file:
     for idx, (name, avg_rating) in enumerate(restaurants, start=1):
         file.write(f"#{idx} {name} {avg_rating:.2f}\n")
