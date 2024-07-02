@@ -52,3 +52,6 @@ for idx, (name, avg_rating) in enumerate(restaurants, start=1):
 with open(rating_file, 'w') as file:
     for idx, (name, avg_rating) in enumerate(restaurants, start=1):
         file.write(f"#{idx} {name} {avg_rating:.2f}\n")
+
+# Ensure the file write is complete
+print("rating.txt has been updated.")
