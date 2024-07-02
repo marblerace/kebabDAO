@@ -28,6 +28,7 @@ jobs:
 
     - name: Display rating.txt contents
       run: |
+        echo "Contents of rating.txt after script execution:"
         cat rating.txt
 
     - name: Commit and push results if there are changes
