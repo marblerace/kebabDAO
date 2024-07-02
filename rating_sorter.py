@@ -23,11 +23,11 @@ restaurants = []
 
 # Define a pattern to extract data
 pattern = re.compile(r'''
-    \s*Restaurant\sName:\s*(?P<name>.+?)\s*  # Restaurant Name
-    Location:\s*(?P<location>.+?)\s*         # Location
-    Rating\sS:\s*(?P<ratingS>\d*\.?\d*)\s*   # Rating S
-    Rating\sJ:\s*(?P<ratingJ>\d*\.?\d*)\s*   # Rating J
-    Comments:\s*(?P<comments>.*)             # Comments
+    \s*(?P<name>.+?)\s*
+    Location:\s*(?P<location>.+?)\s*
+    Rating\sS:\s*(?P<ratingS>\d*\.?\d*)\s*
+    Rating\sJ:\s*(?P<ratingJ>\d*\.?\d*)\s*
+    Comments:\s*(?P<comments>.*)
     ''', re.VERBOSE)
 
 # Parse each entry
