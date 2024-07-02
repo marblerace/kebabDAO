@@ -32,6 +32,6 @@ jobs:
         git config --global user.email 'github-actions@github.com'
         git add rating.txt
         git commit -m 'Update rating.txt'
-        git push
+        git push https://marblerace:${{ secrets.PAT }}@github.com/marblerace/kebabDAO.git
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
