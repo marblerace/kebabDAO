@@ -27,12 +27,11 @@ jobs:
         python rating_sorter.py
 
     - name: Commit and push results
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PAT: ${{ secrets.PAT }}
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
-        git add data.txt
-        git commit -m 'Update data.txt'
-        git push https://marblerace:${{ secrets.PAT }}@github.com/marblerace/kebabDAO.git
+        git add rating.txt
+        git commit -m 'Update rating.txt'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
