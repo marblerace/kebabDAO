@@ -26,12 +26,16 @@ jobs:
       run: |
         python rating_sorter.py
 
-    - name: Commit and push results
+    - name: Commit and push results if there are changes
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
         git add rating.txt
-        git commit -m 'Update rating.txt'
-        git push
+        if [ -n "$(git status --porcelain)" ]; then
+          git commit -m 'Update rating.txt'
+          git push
+        else
+          echo "No changes to commit"
+        fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
