@@ -30,8 +30,8 @@ jobs:
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
-        git add results.txt
-        git commit -m 'Update results.txt'
+        git add rating.txt
+        git commit -m 'Update rating.txt'
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
