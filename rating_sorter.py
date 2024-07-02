@@ -14,6 +14,10 @@ print(content)
 # Split the content into entries based on the pattern
 entries = content.split('Restaurant Name:')
 
+print("Entries found:")
+for entry in entries:
+    print(entry)
+
 # Define a list to hold restaurant data
 restaurants = []
 
@@ -28,6 +32,9 @@ pattern = re.compile(r'''
 
 # Parse each entry
 for entry in entries:
+    if not entry.strip():
+        continue
+
     match = pattern.search(entry)
     if match:
         name = match.group('name').strip()
@@ -45,6 +52,8 @@ for entry in entries:
 
         # Debug print for each restaurant
         print(f"Parsed restaurant: {name}, Rating S: {ratingS}, Rating J: {ratingJ}, Average Rating: {average_rating}")
+    else:
+        print(f"No match found for entry: {entry}")
 
 # Sort the restaurants by average rating in descending order
 restaurants.sort(key=lambda x: x[1], reverse=True)
