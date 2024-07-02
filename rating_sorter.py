@@ -43,6 +43,11 @@ for entry in entries:
 # Sort the restaurants by average rating in descending order
 restaurants.sort(key=lambda x: x[1], reverse=True)
 
+# Debug print
+print("Sorted restaurants:")
+for idx, (name, avg_rating) in enumerate(restaurants, start=1):
+    print(f"#{idx} {name} {avg_rating:.2f}")
+
 # Write the results to the rating.txt file
 with open(rating_file, 'w') as file:
     for idx, (name, avg_rating) in enumerate(restaurants, start=1):
