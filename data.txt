@@ -1,0 +1,35 @@
+Restaurant Name: Goswell Best Charcoal Grill
+Location: 168 Goswell Rd., London EC1V 7DT
+Rating S: 2.5
+Rating J: 
+Comments:
+
+Restaurant Name: Gabija
+Location: 657 High Rd, Seven Kings, Ilford IG3 8RG
+Rating S: 8.5
+Rating J: 
+Comments:
+
+Restaurant Name: Damascus Bite
+Location: 119-121 Brick Ln, London E1 6SE
+Rating S: 7.5
+Rating J: 
+Comments:
+
+Restaurant Name: Naar Lebanese takeaway
+Location: 94 Old St, London EC1V 9AY
+Rating S: 6
+Rating J: 
+Comments:
+
+Restaurant Name: Greek Grill Point
+Location: 85 Lever St, London EC1V 3RA
+Rating S: 9
+Rating J: 
+Comments:
+
+Restaurant Name: City Delight
+Location: 268 St John St, London EC1V 4PE
+Rating S: 6.5
+Rating J: 
+Comments:
