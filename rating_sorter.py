@@ -1,11 +1,11 @@
 import re
 
 # Define the file path
+data_file = 'data.txt'
 rating_file = 'rating.txt'
-results_file = 'results.txt'
 
 # Read the file contents
-with open(rating_file, 'r') as file:
+with open(data_file, 'r') as file:
     content = file.read()
 
 # Split the content into entries based on the pattern
@@ -44,6 +44,6 @@ for entry in entries:
 restaurants.sort(key=lambda x: x[1], reverse=True)
 
 # Write the results to the results.txt file
-with open(results_file, 'w') as file:
+with open(rating_file, 'w') as file:
     for idx, (name, avg_rating) in enumerate(restaurants, start=1):
         file.write(f"#{idx} {name} {avg_rating:.2f}\n")
