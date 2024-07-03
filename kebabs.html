@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,43 +22,44 @@
 </head>
 <body>
     <h2>Kebab Places</h2>
-    <div id="restaurants"></div>
+    <div id="restaurants">
 
-    <script>
-        // This function fetches the content of data.txt
-        async function fetchData() {
-            const response = await fetch('data.txt');
-            const text = await response.text();
-            return text;
-        }
-
-        // This function processes the data and displays it
-        async function displayRestaurants() {
-            const data = await fetchData();
-            const entries = data.trim().split('\n\n');
-            
-            const container = document.getElementById('restaurants');
-            entries.forEach(entry => {
-                const details = entry.split('\n');
-                const restaurant = {};
-                details.forEach(detail => {
-                    const [key, value] = detail.split(':').map(item => item.trim());
-                    restaurant[key] = value;
-                });
-
-                const div = document.createElement('div');
-                div.className = 'restaurant';
-                div.innerHTML = `
-                    <h3>${restaurant['Restaurant Name']}</h3>
-                    <p>${restaurant['Location']}</p>
-                    <img src="${restaurant['Image']}" alt="${restaurant['Restaurant Name']}">
-                `;
-                container.appendChild(div);
-            });
-        }
-
-        // Call the function to display restaurants when the page loads
-        displayRestaurants();
-    </script>
+        <div class="restaurant">
+            <h3>Goswell Best Charcoal Grill</h3>
+            <p>168 Goswell Rd., London EC1V 7DT</p>
+            <img src="h" alt="Goswell Best Charcoal Grill">
+        </div>
+        
+        <div class="restaurant">
+            <h3>Gabija</h3>
+            <p>657 High Rd, Seven Kings, Ilford IG3 8RG</p>
+            <img src="h" alt="Gabija">
+        </div>
+        
+        <div class="restaurant">
+            <h3>Damascus Bite</h3>
+            <p>119-121 Brick Ln, London E1 6SE</p>
+            <img src="h" alt="Damascus Bite">
+        </div>
+        
+        <div class="restaurant">
+            <h3>Naar Lebanese takeaway</h3>
+            <p>94 Old St, London EC1V 9AY</p>
+            <img src="h" alt="Naar Lebanese takeaway">
+        </div>
+        
+        <div class="restaurant">
+            <h3>Greek Grill Point</h3>
+            <p>85 Lever St, London EC1V 3RA</p>
+            <img src="h" alt="Greek Grill Point">
+        </div>
+        
+        <div class="restaurant">
+            <h3>City Delight</h3>
+            <p>268 St John St, London EC1V 4PE</p>
+            <img src="h" alt="City Delight">
+        </div>
+        
+    </div>
 </body>
 </html>
