@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kebab Places</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .restaurant {
+            margin-bottom: 40px; /* Space between restaurant entries */
+        }
+        img {
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Kebab Places</h2>
+    <div id="restaurants"></div>
+
+    <script>
+        // This function fetches the content of data.txt
+        async function fetchData() {
+            const response = await fetch('data.txt');
+            const text = await response.text();
+            return text;
+        }
+
+        // This function processes the data and displays it
+        async function displayRestaurants() {
+            const data = await fetchData();
+            const entries = data.trim().split('\n\n');
+            
+            const container = document.getElementById('restaurants');
+            entries.forEach(entry => {
+                const details = entry.split('\n');
+                const restaurant = {};
+                details.forEach(detail => {
+                    const [key, value] = detail.split(':').map(item => item.trim());
+                    restaurant[key] = value;
+                });
+
+                const div = document.createElement('div');
+                div.className = 'restaurant';
+                div.innerHTML = `
+                    <h3>${restaurant['Restaurant Name']}</h3>
+                    <p>${restaurant['Location']}</p>
+                    <img src="${restaurant['Image']}" alt="${restaurant['Restaurant Name']}">
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        // Call the function to display restaurants when the page loads
+        displayRestaurants();
+    </script>
+</body>
+</html>
