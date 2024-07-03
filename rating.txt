@@ -1,6 +1,6 @@
-#1 Greek Grill Point 9.00, Image: h
-#2 Gabija 8.50, Image: h
-#3 Damascus Bite 7.50, Image: h
-#4 City Delight 6.50, Image: h
-#5 Naar Lebanese takeaway 6.00, Image: h
-#6 Goswell Best Charcoal Grill 2.00, Image: h
+#1 Greek Grill Point 9.00
+#2 Gabija 8.50
+#3 Damascus Bite 7.50
+#4 City Delight 6.50
+#5 Naar Lebanese takeaway 6.00
+#6 Goswell Best Charcoal Grill 2.00
