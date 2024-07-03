@@ -23,14 +23,14 @@ Restaurant Name: Naar Lebanese takeaway
 Location: 94 Old St, London EC1V 9AY
 Rating S: 6
 Rating J: 
-Comments:
+Comments: didn't even ask for a sauce
 Image: https://maps.app.goo.gl/cxUgqDNpejK64TLTA
 
 Restaurant Name: Greek Grill Point
 Location: 85 Lever St, London EC1V 3RA
 Rating S: 9
 Rating J: 
-Comments:
+Comments: albanians occupied greek place
 Image: https://maps.app.goo.gl/vCoiL6qW2ubk1FnXA
 
 Restaurant Name: City Delight
