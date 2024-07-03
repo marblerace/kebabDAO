@@ -31,13 +31,22 @@ jobs:
         echo "Contents of rating.txt after script execution:"
         cat rating.txt
 
+    - name: Generate kebabs.html
+      run: |
+        python generate_kebabs_html.py
+
+    - name: Display kebabs.html contents
+      run: |
+        echo "Contents of kebabs.html after script execution:"
+        cat kebabs.html
+
     - name: Commit and push results if there are changes
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
-        git add rating.txt
+        git add rating.txt kebabs.html
         if [ -n "$(git status --porcelain)" ]; then
-          git commit -m 'Update rating.txt'
+          git commit -m 'Update rating.txt and kebabs.html'
           git push
         else
           echo "No changes to commit"
