@@ -27,7 +27,8 @@ pattern = re.compile(r'''
     Location:\s*(?P<location>.+?)\s*
     Rating\sS:\s*(?P<ratingS>\d*\.?\d*)\s*
     Rating\sJ:\s*(?P<ratingJ>\d*\.?\d*)\s*
-    Comments:\s*(?P<comments>.*)
+    Comments:\s*(?P<comments>.*)\s*
+    Image:\s*(?P<image>.+?)\s*
     ''', re.VERBOSE)
 
 # Parse each entry
@@ -40,7 +41,8 @@ for entry in entries:
         name = match.group('name').strip()
         ratingS = match.group('ratingS').strip()
         ratingJ = match.group('ratingJ').strip()
-        
+        image = match.group('image').strip()
+
         # Convert ratings to floats, handle missing ratings
         ratingS = float(ratingS) if ratingS else 0
         ratingJ = float(ratingJ) if ratingJ else 0
@@ -48,10 +50,10 @@ for entry in entries:
         average_rating = (ratingS + ratingJ) / divisor
 
         # Append to the list
-        restaurants.append((name, average_rating))
+        restaurants.append((name, average_rating, image))
 
         # Debug print for each restaurant
-        print(f"Parsed restaurant: {name}, Rating S: {ratingS}, Rating J: {ratingJ}, Average Rating: {average_rating}")
+        print(f"Parsed restaurant: {name}, Rating S: {ratingS}, Rating J: {ratingJ}, Average Rating: {average_rating}, Image: {image}")
     else:
         print(f"No match found for entry: {entry}")
 
@@ -60,13 +62,13 @@ restaurants.sort(key=lambda x: x[1], reverse=True)
 
 # Debug print
 print("Sorted restaurants:")
-for idx, (name, avg_rating) in enumerate(restaurants, start=1):
-    print(f"#{idx} {name} {avg_rating:.2f}")
+for idx, (name, avg_rating, image) in enumerate(restaurants, start=1):
+    print(f"#{idx} {name} {avg_rating:.2f}, Image: {image}")
 
 # Write the results to the rating.txt file
 with open(rating_file, 'w') as file:
-    for idx, (name, avg_rating) in enumerate(restaurants, start=1):
-        file.write(f"#{idx} {name} {avg_rating:.2f}\n")
+    for idx, (name, avg_rating, image) in enumerate(restaurants, start=1):
+        file.write(f"#{idx} {name} {avg_rating:.2f}, Image: {image}\n")
 
 # Ensure the file write is complete
 print("rating.txt has been updated.")
