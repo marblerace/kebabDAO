@@ -50,7 +50,7 @@ for entry in entries:
         average_rating = (ratingS + ratingJ) / divisor
 
         # Append to the list
-        restaurants.append((name, average_rating, image))
+        restaurants.append((name, average_rating))
 
         # Debug print for each restaurant
         print(f"Parsed restaurant: {name}, Rating S: {ratingS}, Rating J: {ratingJ}, Average Rating: {average_rating}, Image: {image}")
@@ -62,13 +62,13 @@ restaurants.sort(key=lambda x: x[1], reverse=True)
 
 # Debug print
 print("Sorted restaurants:")
-for idx, (name, avg_rating, image) in enumerate(restaurants, start=1):
-    print(f"#{idx} {name} {avg_rating:.2f}, Image: {image}")
+for idx, (name, avg_rating) in enumerate(restaurants, start=1):
+    print(f"#{idx} {name} {avg_rating:.2f}")
 
 # Write the results to the rating.txt file
 with open(rating_file, 'w') as file:
-    for idx, (name, avg_rating, image) in enumerate(restaurants, start=1):
-        file.write(f"#{idx} {name} {avg_rating:.2f}, Image: {image}\n")
+    for idx, (name, avg_rating) in enumerate(restaurants, start=1):
+        file.write(f"#{idx} {name} {avg_rating:.2f}\n")
 
 # Ensure the file write is complete
 print("rating.txt has been updated.")
