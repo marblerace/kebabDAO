@@ -1,7 +1,7 @@
 Restaurant Name: Goswell Best Charcoal Grill
 Location: 168 Goswell Rd., London EC1V 7DT
 Rating S: 2.5
-Rating J: 
+Rating J: 2
 Comments: turk tried to scam us
 Image: https://maps.app.goo.gl/wmRkFSjBxwm1KR3TA
 
