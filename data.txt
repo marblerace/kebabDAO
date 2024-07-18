@@ -39,3 +39,10 @@ Rating S: 6.5
 Rating J: 
 Comments:
 Image: https://maps.app.goo.gl/KDeAL1PfxZcE7mKX7
+
+Restaurant Name: German Doner Kebab
+Location: 11A Islington High St, London N1 9LQ
+Rating S: 3.5
+Rating J: 
+Comments: so soft and lack of sauce, strange variaty of vegetables
+Image: https://maps.app.goo.gl/HFcTVdENocivbdZt7
