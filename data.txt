@@ -37,7 +37,7 @@ Restaurant Name: City Delight
 Location: 268 St John St, London EC1V 4PE
 Rating S: 6.5
 Rating J: 6
-Comments:
+Comments: inside was so horrible
 Image: https://maps.app.goo.gl/KDeAL1PfxZcE7mKX7
 
 Restaurant Name: German Doner Kebab
