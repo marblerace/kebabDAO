@@ -8,41 +8,41 @@ Image: https://maps.app.goo.gl/wmRkFSjBxwm1KR3TA
 Restaurant Name: Gabija
 Location: 657 High Rd, Seven Kings, Ilford IG3 8RG
 Rating S: 8.5
-Rating J: 
+Rating J: 8
 Comments:
 Image: https://maps.app.goo.gl/7TGbvztb4BPgoiGC7
 
 Restaurant Name: Damascus Bite
 Location: 119-121 Brick Ln, London E1 6SE
 Rating S: 7.5
-Rating J: 
+Rating J: 6
 Comments:
 Image: https://maps.app.goo.gl/KqdEaCGLc9rQgE3B7
 
 Restaurant Name: Naar Lebanese takeaway
 Location: 94 Old St, London EC1V 9AY
 Rating S: 6
-Rating J: 
+Rating J: 4.8
 Comments: didn't even ask for a sauce
 Image: https://maps.app.goo.gl/cxUgqDNpejK64TLTA
 
 Restaurant Name: Greek Grill Point
 Location: 85 Lever St, London EC1V 3RA
 Rating S: 9
-Rating J: 
+Rating J: 7.5
 Comments: albanians occupied greek place
 Image: https://maps.app.goo.gl/vCoiL6qW2ubk1FnXA
 
 Restaurant Name: City Delight
 Location: 268 St John St, London EC1V 4PE
 Rating S: 6.5
-Rating J: 
+Rating J: 6
 Comments:
 Image: https://maps.app.goo.gl/KDeAL1PfxZcE7mKX7
 
 Restaurant Name: German Doner Kebab
 Location: 11A Islington High St, London N1 9LQ
 Rating S: 3.5
-Rating J: 
+Rating J: 5
 Comments: so soft and lack of sauce, strange variaty of vegetables
 Image: https://maps.app.goo.gl/HFcTVdENocivbdZt7
