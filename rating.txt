@@ -1,7 +1,7 @@
-#1 Greek Grill Point 9.00
-#2 Gabija 8.50
-#3 Damascus Bite 7.50
-#4 City Delight 6.50
-#5 Naar Lebanese takeaway 6.00
-#6 German Doner Kebab 3.50
+#1 Gabija 8.25
+#2 Greek Grill Point 8.25
+#3 Damascus Bite 6.75
+#4 City Delight 6.25
+#5 Naar Lebanese takeaway 5.40
+#6 German Doner Kebab 4.25
 #7 Goswell Best Charcoal Grill 2.25
